@@ -162,7 +162,7 @@ export default function Board() {
           </button>
         </div>
       )}
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 ">
         {board.map((value, index) => (
           <Square
             key={index}
@@ -179,6 +179,7 @@ export default function Board() {
             setPlayAI(true);
             setBoard(Array(9).fill(null));
             setGameOutcome(null);
+            setLock(false);
           }}
         >
           Reset
